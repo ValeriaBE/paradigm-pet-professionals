@@ -3,11 +3,153 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Paradigm Pet Professionals - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-primary container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../images/general/logo.png" alt="PPP Logo" width="198"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav darkgray">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./subpages/cat.html">Cats</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./subpages/dog.html">Dogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./subpages/bird.html">Birds</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#form" class="btn btn-primary me-2" type="button">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="d-flexbox align-items-center container">
+                <img src="../images/general/petowner.png" alt="PPP Logo" class="mt-3">
+                <div class="col-md-1"></div>
+                <div class="darkblue">
+                    <h1>Unlock a Longer, Happier Life</h1>
+                    <h2 class="hero--subtitle">Discover the Power of Pets with Pet Paradigm Professionals</h2>
+                    <a href="#form" class="btn-secondary mt-4 col-md-3">CONSULT A PEXPERT NOW</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="container mt-5">
+            <h3 class="text-center darkblue">About us</h3>
+            <p class="darkgray">Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and <strong>improves our overall quality of life</strong> as well as the lives of our pets.<br> 
+                At Pet Paradigm Professionals, our <strong>mission</strong> is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones.</p>
+        </section>
+        <section id="types" class="container mt-5">
+            <h3 class="text-center darkblue mb-5">Types of Pets</h3>
+            <div class="d-flexbox justify-content-between">
+                <a href="./subpages/cat.html" id="cats-container" class="types-container col-md-3 text-center">
+                    <img src="../images/cat/image10.jpg" alt="" class="w-100" height="214">
+                    <h4 class="darkblue mt-3 mb-3">Cats</h4>
+                </a>
+                <a href="./subpages/dog.html" id="dogs-container" class="types-container col-md-3 text-center">
+                    <img src="../images/dog/image6.jpg" alt="" class="w-100" height="214">
+                    <h4 class="darkblue mt-3 mb-3">Dogs</h4>
+                </a>
+                <a href="./subpages/bird.html" id="birds-container" class="types-container col-md-3 text-center">
+                    <img src="../images/bird/image11.jpg" alt="" class="w-100" height="214">
+                    <h4 class="darkblue mt-3 mb-3">Birds</h4>
+                </a>
+            </div>
+        </section>
+        <section id="adoption-links" class="container mt-5">
+            <div class="d-flexbox justify-content-center">
+                <h4 class="col-md-6 mb-0 darkgray">Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:</h4>
+                <ul class="col-md-4 mb-0 darkgray">
+                    <li><a href="https://theshelterpetproject.org/">General Adoption Resources</a></li>
+                    <li><a href="https://www.aspca.org/">ASPCA</a></li>
+                    <li><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/">Fish Rescue</a></li>
+                    <li><a href="https://savethesnakes.org/snakerescuecall/">Snake Rescue</a></li>
+                    <li><a href="https://ftlob.rescuegroups.org/">Bird Rescue</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="form" class="container mt-5">
+            <p class="lightblue text-center"><strong>We are also happy to help you navigate the adoption process!</strong> <br>We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home.</p>
+            <p class="darkgray caption text-center">* Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.</p>
+            <form>
+                <div class="d-flexbox w-100 justify-content-between">
+                    <div class="w-100 user-info">
+                        <div class="mb-3">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Jane Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPhone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="inputPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123) 456-7891" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="inputEmail" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="inputEmail" pattern=".+@globex\.com" size="30" placeholder="janedoe@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="w-100">
+                        <div class="mb-3">
+                            <label for="inputPetName" class="form-label">Pet's Name</label>
+                            <input type="text" class="form-control" id="inputPetName" placeholder="Scooby Doo" >
+                        </div>
+                        <div class="mb-3 d-flexbox flex-column">
+                            <label for="inputPetType" class="form-label">Pet Type</label>
+                            <select name="pet-type" id="inputPetType" class="w-100">
+                                <option value="Cat">Cat</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Bird">Bird</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPetAge" class="form-label">Pet Age</label>
+                            <input type="number" class="form-control" id="inputPetAge" placeholder="1">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="mb-3">
+                        <label for="inputTimeZone" class="form-label">Time Zone</label>
+                        <input type="datetime-local" class="form-control" id="inputTimeZone" >
+                    </div>
+                    <button type="submit" class="btn btn-primary--submit">Submit</button>
+                </div>
+              </form>
+        </section>
+    </main>
+    <footer class="mt-5">
+        <div class="d-flexbox align-items-center justify-content-between container">
+            <img src="../images/general/logo.png" alt="PPP Logo" width="201" class="col-md-2">
+            <div class="col-md-6 justify-content-center d-flexbox footer-links">
+                <div class="d-flexbox flex-column">
+                    <a href="index.html" class="white">About</a>
+                    <a href="./subpages/cat.html" class="white mt-3">Cats</a>
+                </div>
+                <div class="d-flexbox flex-column">
+                    <a href="./subpages/dog.html" class="white">Dogs</a>
+                    <a href="./subpages/bird.html" class="white mt-3">Birds</a>
+                </div>
+            </div>
+            <button class="btn-white col-md-2">Contact Us</button>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
